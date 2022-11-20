@@ -1,6 +1,5 @@
 # Copyright (c) 2017 Adafruit Industries
 # Author: Tony DiCola & James DeVito
-# SH1106 Translator: Mesut Can ALAGÖZ
 
 import time
 import datetime
@@ -69,10 +68,10 @@ while True:
 
     # Write two lines of text.
 
-    draw.text((x, top+5),       "IP: " + str(IP,'utf-8'),  font=font, fill=0)
-    draw.text((x, top+15),     str(CPU,'utf-8') + " " + str(temp,'utf-8'), font=font, fill=0)
-    draw.text((x, top+25),    str(MemUsage,'utf-8'),  font=font, fill=0)
-    draw.text((x, top+35),    str(Disk,'utf-8'),  font=font, fill=0)
+    draw.text((x, top+5), "IP: " + str(IP,'utf-8'),  font=font, fill=0)
+    draw.text((x, top+15), str(CPU,'utf-8') + " " + str(temp,'utf-8'), font=font, fill=0)
+    draw.text((x, top+25), str(MemUsage,'utf-8'),  font=font, fill=0)
+    draw.text((x, top+35), str(Disk,'utf-8'),  font=font, fill=0)
     draw.text((x, top+45), result, font=font, fill=0)
     draw.text((x, top+55), "USERNAME", font=font, fill=0)
 
